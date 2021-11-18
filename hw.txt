@@ -1,0 +1,32 @@
+#2 First 12 coordinates popped off stack
+(6,4)
+(6,3)
+(6,5)
+(7,5)
+(8,5)
+(8,6)
+(8,7)
+(8,8)
+(8,9)
+(7,8)
+(7,9)
+(7,6)
+
+#4 First 12 coordinates popped off queue 
+(6,4)
+(5,4)
+(6,5)
+(6,3)
+(4,4)
+(5,5)
+(6,6)
+(7,5)
+(3,4)
+(4,5)
+(5,6)
+(6,7)
+
+
+The two algorithms visit maze coordinates in a different order because of each data structure's unique method of adding and removing objects. In the stack algorithm, the last object added is the first to be removed, whereas in the queue algorithm, the last object added is the last to be removed. 
+
+For example, the second coordinate visited by the stack algorithm is (6,3), directly west of the starting coordinate (6,4). The second coordinate visited by the queue algorithm is (5,4), directly north of the starting coordinate. This is consistent with the above explanation because both algorithms push the north coordinates first and the west coordinates last. 
